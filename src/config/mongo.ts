@@ -10,6 +10,7 @@ const connectMongodb = async () => {
     await connect(URI_DB)
     console.log("✅ Conectado con éxito a mongodb")
   } catch (error) {
+    console.log(error)
     console.log(`🚫 No se pudo conectar a mongodb`)
   }
 }
