@@ -72,6 +72,7 @@ app.delete("/api/books/:id", async (req, res): Promise<any> => {
     res.json({ success: deletedBook, message: "libro borrado con éxito" })
   } catch (error) {
     const err = error as Error
+
     res.status(500).json({
       success: false,
       message: err.message
