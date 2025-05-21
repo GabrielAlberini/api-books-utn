@@ -5,7 +5,7 @@ import cors from "cors"
 import dotenv from "dotenv"
 dotenv.config()
 
-process.loadEnvFile()
+// process.loadEnvFile()
 
 //1234
 const PORT = process.env.PORT
